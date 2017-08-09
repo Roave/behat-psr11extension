@@ -13,5 +13,10 @@
             "name": "James Titcumb",
             "email": "james@asgrim.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "Roave\\BehatPsrContainer\\": "src/"
+        }
+    }
 }
