@@ -1,0 +1,7 @@
+services:
+  psr_container:
+    class: RoaveBehatPsrContainer
+    factory: ['Roave\BehatPsrContainer\ContainerFactory', 'createContainerFromIncludedFile']
+    tags: ['helper_container.container']
+    shared: false
+    arguments: ["%roave.behat.psr.container.included.file%"]

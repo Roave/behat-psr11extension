@@ -1,0 +1,17 @@
+{
+    "name": "roave/behat-psr11extension",
+    "description": "PSR-11 Container extension for Behat",
+    "type": "library",
+    "require": {
+        "php": "^7.1",
+        "behat/behat": "^3.3",
+        "psr/container": "^1.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "James Titcumb",
+            "email": "james@asgrim.com"
+        }
+    ]
+}
