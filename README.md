@@ -9,7 +9,7 @@ Created with lots of help from @ciaranmcnulty.
 First require the extension and dependencies with Composer:
 
 ```bash
-$ composer require roave/behat-psr11extension
+$ composer require --dev roave/behat-psr11extension
 ```
 
 First, if you don't already have one, create a file that will be included by the extension that returns a PSR-11
