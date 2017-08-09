@@ -2,6 +2,8 @@
 
 Allows injecting services from a PSR-11-compatibile container in a Behat context.
 
+Created with lots of help from @ciaranmcnulty.
+
 ## Usage
 
 First require the extension and dependencies with Composer:
