@@ -1,0 +1,15 @@
+language: php
+
+php:
+  - 7.1
+
+env:
+  matrix:
+    - DEPENDENCIES=""
+    - DEPENDENCIES="--prefer-lowest --prefer-stable"
+
+before_script:
+  - composer update --prefer-dist $DEPENDENCIES
+
+script:
+  - vendor/bin/behat
