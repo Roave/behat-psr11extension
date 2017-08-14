@@ -2,6 +2,8 @@ services:
   psr_container:
     class: RoaveBehatPsrContainer
     factory: ['Roave\BehatPsrContainer\ContainerFactory', 'createContainerFromIncludedFile']
-    tags: ['helper_container.container']
+    tags:
+      - {'name': 'helper_container.container'}
     shared: false
+    scope: prototype
     arguments: ["%roave.behat.psr.container.included.file%"]
