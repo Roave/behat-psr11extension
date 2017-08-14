@@ -5,7 +5,11 @@
     "require": {
         "php": "^7.1",
         "behat/behat": "^3.3",
-        "psr/container": "^1.0"
+        "psr/container": "^1.0",
+        "symfony/dependency-injection": "^3.3"
+    },
+    "require-dev": {
+        "zendframework/zend-servicemanager": "^3.3"
     },
     "license": "MIT",
     "authors": [
@@ -17,6 +21,11 @@
     "autoload": {
         "psr-4": {
             "Roave\\BehatPsrContainer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RoaveTest\\BehatPsrContainer\\": "features/bootstrap/"
         }
     }
 }

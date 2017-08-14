@@ -1,0 +1,11 @@
+default:
+  suites:
+    my_suite:
+      services: "@psr_container"
+      contexts:
+        - RoaveTest\BehatPsrContainer\FeatureContext:
+          - "@RoaveTest\\BehatPsrContainer\\TestService"
+
+  extensions:
+    Roave\BehatPsrContainer\PsrContainerExtension:
+      container: 'features/bootstrap/example-zend-servicemanager-container.php'

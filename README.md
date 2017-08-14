@@ -2,7 +2,7 @@
 
 Allows injecting services from a PSR-11-compatibile container in a Behat context.
 
-Created with lots of help from @ciaranmcnulty.
+Created with lots of help from [@ciaranmcnulty](https://github.com/ciaranmcnulty).
 
 ## Usage
 
