@@ -44,7 +44,15 @@ final class PsrContainerExtension implements Extension
         $definition = new Definition(ContainerInterface::class, ["%roave.behat.psr.container.included.file%"]);
         $definition->setFactory([ContainerFactory::class, 'createContainerFromIncludedFile']);
         $definition->addTag('helper_container.container');
-        $definition->setShared(false);
+
+        if (method_exists($definition, 'setShared')) {
+            // introduced in Symfony 2.8
+            $definition->setShared(false);
+        }
+        else {
+            // removed in Symfony 3.0
+            $definition->setScope(ContainerBuilder::SCOPE_PROTOTYPE);
+        }
 
         $container->setDefinition($config['name'], $definition);
     }
