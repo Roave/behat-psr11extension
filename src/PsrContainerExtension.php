@@ -40,20 +40,31 @@ final class PsrContainerExtension implements Extension
     public function load(ContainerBuilder $container, array $config)
     {
         $container->setParameter('roave.behat.psr.container.included.file', $config['container']);
+        $container->setDefinition($config['name'], $this->createContainerDefinition());
+    }
 
+    private function createContainerDefinition() : Definition
+    {
         $definition = new Definition(ContainerInterface::class, ["%roave.behat.psr.container.included.file%"]);
         $definition->setFactory([ContainerFactory::class, 'createContainerFromIncludedFile']);
         $definition->addTag('helper_container.container');
 
+        $this->setContainerScope($definition);
+
+        return $definition;
+    }
+
+    /**
+     * The way to set service scope was improved across Symfony versions:
+     *  - setShared was introduced in 2.8
+     *  - setScope (and the constant) were removed in 3.0
+     */
+    private function setContainerScope($definition) : void
+    {
         if (method_exists($definition, 'setShared')) {
-            // introduced in Symfony 2.8
             $definition->setShared(false);
-        }
-        else {
-            // removed in Symfony 3.0
+        } else {
             $definition->setScope(ContainerBuilder::SCOPE_PROTOTYPE);
         }
-
-        $container->setDefinition($config['name'], $definition);
     }
 }
