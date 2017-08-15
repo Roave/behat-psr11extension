@@ -32,6 +32,7 @@ final class PsrContainerExtension implements Extension
         $builder
             ->children()
                 ->scalarNode('container')->defaultValue('config/container.php')->end()
+                ->scalarNode('name')->defaultValue('psr_container')->end()
             ->end()
         ->end();
     }
@@ -45,6 +46,6 @@ final class PsrContainerExtension implements Extension
         $definition->addTag('helper_container.container');
         $definition->setShared(false);
 
-        $container->setDefinition('psr_container', $definition);
+        $container->setDefinition($config['name'], $definition);
     }
 }

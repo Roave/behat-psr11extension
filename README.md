@@ -65,6 +65,16 @@ default:
           - "@Whatever\\Service\\Name"
 ```
 
+If for some reason you want to use a name other than `psr_container` for the container (e.g. collision with another extension) this can 
+be overridden:
+
+```yaml
+  extensions:
+    Roave\BehatPsrContainer\PsrContainerExtension:
+      container: 'config/container.php'
+      name: 'my_container'
+```
+
 Just for clarity (and hopefully ease of understanding), this would be the equivalent of doing this in plain PHP:
 
 ```php
