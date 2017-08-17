@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace RoaveTest\BehatPsrContainer;
+namespace RoaveFeatureTest\BehatPsrContainer;
 
 final class TestService
 {

@@ -3,8 +3,8 @@ default:
     my_suite:
       services: "@my_container"
       contexts:
-        - RoaveTest\BehatPsrContainer\FeatureContext:
-          - "@RoaveTest\\BehatPsrContainer\\TestService"
+        - RoaveFeatureTest\BehatPsrContainer\FeatureContext:
+          - "@RoaveFeatureTest\\BehatPsrContainer\\TestService"
 
   extensions:
     Roave\BehatPsrContainer\PsrContainerExtension:

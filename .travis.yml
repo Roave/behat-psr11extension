@@ -5,7 +5,7 @@ php:
 
 env:
   matrix:
-    - DEPENDENCIES=""
+    - DEPENDENCIES="" COVERAGE="yes"
     - DEPENDENCIES="--prefer-lowest --prefer-stable"
 
 before_script:
@@ -13,3 +13,8 @@ before_script:
 
 script:
   - vendor/bin/behat
+  - if [[ $COVERAGE == yes ]]; then vendor/bin/phpunit --coverage-text --coverage-clover=clover.xml; fi
+  - if [[ $COVERAGE != yes ]]; then vendor/bin/phpunit; fi
+
+after_script:
+  - if [[ $COVERAGE = yes ]]; then wget https://scrutinizer-ci.com/ocular.phar && php ocular.phar code-coverage:upload --format=php-clover clover.xml; fi
