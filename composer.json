@@ -9,7 +9,8 @@
         "symfony/dependency-injection": "^2.7 || ^3.0"
     },
     "require-dev": {
-        "zendframework/zend-servicemanager": "^3.3"
+        "zendframework/zend-servicemanager": "^3.3",
+        "phpunit/phpunit": "^6.3"
     },
     "license": "MIT",
     "authors": [
@@ -25,7 +26,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "RoaveTest\\BehatPsrContainer\\": "features/bootstrap/"
+            "RoaveFeatureTest\\BehatPsrContainer\\": "features/bootstrap/",
+            "RoaveTest\\BehatPsrContainer\\": "test/"
         }
     }
 }
