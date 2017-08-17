@@ -17,17 +17,17 @@ use Symfony\Component\DependencyInjection\ContainerBuilder;
  */
 final class PsrContainerExtensionTest extends TestCase
 {
-    public function testPsrContainerExtensionIsABehatExtension()
+    public function testPsrContainerExtensionIsABehatExtension() : void
     {
         self::assertInstanceOf(Extension::class, new PsrContainerExtension());
     }
 
-    public function testGetConfigKeyReturnsNamespace()
+    public function testGetConfigKeyReturnsNamespace() : void
     {
         self::assertSame('Roave\BehatPsrContainer', (new PsrContainerExtension())->getConfigKey());
     }
 
-    public function testConfiguration()
+    public function testConfiguration() : void
     {
         $builder = new ArrayNodeDefinition('foo');
 
@@ -49,7 +49,7 @@ final class PsrContainerExtensionTest extends TestCase
         self::assertSame('psr_container', $nameNode->getDefaultValue());
     }
 
-    public function testLoadSetsUpContainer()
+    public function testLoadSetsUpContainer() : void
     {
         $builder = new ContainerBuilder();
         $containerConfigValue = uniqid('containerConfigvalue', true);
