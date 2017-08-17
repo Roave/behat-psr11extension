@@ -6,6 +6,7 @@ namespace RoaveTest\BehatPsrContainer;
 use PHPUnit\Framework\TestCase;
 use Psr\Container\ContainerInterface;
 use Roave\BehatPsrContainer\ContainerFactory;
+use Roave\BehatPsrContainer\Exception\NotAPsrContainer;
 
 /**
  * @covers \Roave\BehatPsrContainer\ContainerFactory
@@ -36,8 +37,7 @@ final class ContainerFactoryTest extends TestCase
             "<?php return new \stdClass();"
         );
 
-        $this->expectException(\RuntimeException::class);
-        $this->expectExceptionMessage('File ' . $this->tempFilename . ' must return a PSR-11 container');
+        $this->expectException(NotAPsrContainer::class);
         ContainerFactory::createContainerFromIncludedFile($this->tempFilename);
     }
 

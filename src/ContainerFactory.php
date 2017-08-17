@@ -18,7 +18,7 @@ final class ContainerFactory
         $container = require $containerFile;
 
         if (!$container instanceof ContainerInterface) {
-            throw new \RuntimeException(sprintf('File %s must return a PSR-11 container', $containerFile));
+            throw Exception\NotAPsrContainer::fromAnythingButAPsrContainer($containerFile, $container);
         }
 
         return $container;
