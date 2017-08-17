@@ -5,13 +5,8 @@ php:
 
 env:
   matrix:
-    - DEPENDENCIES=""
+    - DEPENDENCIES="" COVERAGE="yes"
     - DEPENDENCIES="--prefer-lowest --prefer-stable"
-
-matrix:
-  include:
-    - php: 7.1
-      env: COVERAGE=yes
 
 before_script:
   - composer update --prefer-dist $DEPENDENCIES
