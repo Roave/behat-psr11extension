@@ -1,5 +1,7 @@
 # PSR-11 Container extension for Behat
 
+[![Build Status](https://travis-ci.org/Roave/behat-psr11extension.svg?branch=master)](https://travis-ci.org/Roave/behat-psr11extension) [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Roave/behat-psr11extension/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Roave/behat-psr11extension/?branch=master) [![Code Coverage](https://scrutinizer-ci.com/g/Roave/behat-psr11extension/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/Roave/behat-psr11extension/?branch=master) [![Latest Stable Version](https://poser.pugx.org/roave/behat-psr11extension/v/stable)](https://packagist.org/packages/roave/behat-psr11extension) [![License](https://poser.pugx.org/roave/behat-psr11extension/license)](https://packagist.org/packages/roave/behat-psr11extension)
+
 Allows injecting services from a PSR-11-compatibile container in a Behat context.
 
 Created with lots of help from [@ciaranmcnulty](https://github.com/ciaranmcnulty).
