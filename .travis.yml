@@ -8,8 +8,18 @@ env:
     - DEPENDENCIES=""
     - DEPENDENCIES="--prefer-lowest --prefer-stable"
 
+matrix:
+  include:
+    - php: 7.1
+      env: COVERAGE=yes
+
 before_script:
   - composer update --prefer-dist $DEPENDENCIES
 
 script:
   - vendor/bin/behat
+  - if [[ $COVERAGE == yes ]]; then vendor/bin/phpunit --coverage-text --coverage-clover=clover.xml; fi
+  - if [[ $COVERAGE != yes ]]; then vendor/bin/phpunit; fi
+
+after_script:
+  - if [[ $COVERAGE = yes ]]; then wget https://scrutinizer-ci.com/ocular.phar && php ocular.phar code-coverage:upload --format=php-clover clover.xml; fi
