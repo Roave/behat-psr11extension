@@ -47,6 +47,7 @@ final class PsrContainerExtension implements Extension
         $definition = new Definition(ContainerInterface::class, ['%roave.behat.psr.container.included.file%']);
         $definition->setFactory([ContainerFactory::class, 'createContainerFromIncludedFile']);
         $definition->addTag('helper_container.container');
+        $definition->setPublic(true);
 
         $this->setContainerScope($definition);
 
