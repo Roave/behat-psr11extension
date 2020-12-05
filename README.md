@@ -67,6 +67,18 @@ default:
           - "@Whatever\\Service\\Name"
 ```
 
+You can also use behat's built-in [autowire feature](https://github.com/Behat/Behat/pull/1071), to automatically inject the dependencies to the context:
+
+```yaml
+default:
+  suites:
+    my_suite:
+      autowire: true
+      services: "@psr_container"
+      contexts:
+        - MyBehatTestSuite\MyContext
+```
+
 If for some reason you want to use a name other than `psr_container` for the container (e.g. collision with another extension) this can 
 be overridden:
 
