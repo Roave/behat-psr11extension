@@ -4,7 +4,7 @@
     "type": "library",
     "require": {
         "php": "^7.1",
-        "behat/behat": "^3.3",
+        "behat/behat": "^3.4",
         "psr/container": "^1.0",
         "symfony/dependency-injection": "^2.7 || ^3.0 || ^4.0 || ^5.0"
     },
