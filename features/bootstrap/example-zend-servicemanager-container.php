@@ -1,13 +1,17 @@
 <?php
+
 declare(strict_types=1);
 
+use Psr\Container\ContainerInterface;
 use RoaveFeatureTest\BehatPsrContainer\TestService;
+use Zend\ServiceManager\ServiceManager;
 
-$serviceManager = new \Zend\ServiceManager\ServiceManager();
+$serviceManager = new ServiceManager();
 $serviceManager->setFactory(
     TestService::class,
-    static function (\Psr\Container\ContainerInterface $container) : TestService {
+    static function (ContainerInterface $container): TestService {
         return new TestService(true);
     }
 );
+
 return $serviceManager;

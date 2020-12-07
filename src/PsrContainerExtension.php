@@ -1,4 +1,5 @@
 <?php
+
 declare(strict_types=1);
 
 namespace Roave\BehatPsrContainer;
@@ -10,22 +11,24 @@ use Symfony\Component\Config\Definition\Builder\ArrayNodeDefinition;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Definition;
 
+use function method_exists;
+
 final class PsrContainerExtension implements Extension
 {
-    public function process(ContainerBuilder $container) : void
+    public function process(ContainerBuilder $container): void
     {
     }
 
-    public function getConfigKey() : string
+    public function getConfigKey(): string
     {
         return __NAMESPACE__;
     }
 
-    public function initialize(ExtensionManager $extensionManager) : void
+    public function initialize(ExtensionManager $extensionManager): void
     {
     }
 
-    public function configure(ArrayNodeDefinition $builder) : void
+    public function configure(ArrayNodeDefinition $builder): void
     {
         /** @noinspection NullPointerExceptionInspection */
         $builder
@@ -36,13 +39,14 @@ final class PsrContainerExtension implements Extension
         ->end();
     }
 
-    public function load(ContainerBuilder $container, array $config) : void
+    /** @param string[] $config */
+    public function load(ContainerBuilder $container, array $config): void
     {
         $container->setParameter('roave.behat.psr.container.included.file', $config['container']);
         $container->setDefinition($config['name'], $this->createContainerDefinition());
     }
 
-    private function createContainerDefinition() : Definition
+    private function createContainerDefinition(): Definition
     {
         $definition = new Definition(ContainerInterface::class, ['%roave.behat.psr.container.included.file%']);
         $definition->setFactory([ContainerFactory::class, 'createContainerFromIncludedFile']);
@@ -58,10 +62,8 @@ final class PsrContainerExtension implements Extension
      * The way to set service scope was improved across Symfony versions:
      *  - setShared was introduced in 2.8
      *  - setScope (and the constant) were removed in 3.0
-     *
-     * @param Definition $definition
      */
-    private function setContainerScope(Definition $definition) : void
+    private function setContainerScope(Definition $definition): void
     {
         if (method_exists($definition, 'setShared')) {
             $definition->setShared(false);
