@@ -10,7 +10,8 @@
     },
     "require-dev": {
         "zendframework/zend-servicemanager": "^3.3",
-        "phpunit/phpunit": "^6.3"
+        "phpunit/phpunit": "^6.3",
+        "doctrine/coding-standard": "^8.2"
     },
     "license": "MIT",
     "authors": [
