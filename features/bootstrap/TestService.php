@@ -5,8 +5,16 @@ namespace RoaveFeatureTest\BehatPsrContainer;
 
 final class TestService
 {
+    /** @var bool */
+    private $calledFromFactory;
+
+    public function __construct(bool $calledFromFactory = false)
+    {
+        $this->calledFromFactory = $calledFromFactory;
+    }
+
     public function works() : bool
     {
-        return true;
+        return $this->calledFromFactory;
     }
 }
