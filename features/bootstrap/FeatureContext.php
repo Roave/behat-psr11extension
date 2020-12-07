@@ -18,9 +18,9 @@ final class FeatureContext implements Context
     }
 
     /**
-     * @Given /^I have a Zend\\ServiceManager container$/
+     * @Given /^I have a Laminas\\ServiceManager container$/
      */
-    public function iHaveAZendServiceManagerContainer(): void
+    public function iHaveALaminasServiceManagerContainer(): void
     {
     }
 

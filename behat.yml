@@ -8,5 +8,5 @@ default:
 
   extensions:
     Roave\BehatPsrContainer\PsrContainerExtension:
-      container: "features/bootstrap/example-zend-servicemanager-container.php"
+      container: "features/bootstrap/example-laminas-servicemanager-container.php"
       name: "my_container"
