@@ -1,15 +1,15 @@
 <?php
+
 declare(strict_types=1);
 
 namespace RoaveFeatureTest\BehatPsrContainer;
 
 use Behat\Behat\Context\Context;
+use RuntimeException;
 
 final class FeatureContext implements Context
 {
-    /**
-     * @var TestService
-     */
+    /** @var TestService */
     private $testService;
 
     public function __construct(TestService $testService)
@@ -20,25 +20,36 @@ final class FeatureContext implements Context
     /**
      * @Given /^I have a Zend\\ServiceManager container$/
      */
-    public function iHaveAZendServiceManagerContainer() : void
+    public function iHaveAZendServiceManagerContainer(): void
     {
     }
 
     /**
      * @When /^I instantiate a context$/
      */
-    public function iInstantiateAContext() : void
+    public function iInstantiateAContext(): void
     {
     }
 
     /**
-     * @Then /^I should have services injected$/
-     * @throws \RuntimeException
+     * @throws RuntimeException
+     *
+     * @Then /^I should have services injected through the constructor$/
      */
-    public function iShouldHaveServicesInjected() : void
+    public function iShouldHaveServicesInjected(): void
     {
-        if (!$this->testService->works()) {
-            throw new \RuntimeException('It didn\'t work.');
+        if (! $this->testService->works()) {
+            throw new RuntimeException('It didn\'t work.');
+        }
+    }
+
+    /**
+     * @Given /^I should have services injected as step arguments$/
+     */
+    public function iShouldHaveServicesInjectedAsStepArguments(TestService $testService): void
+    {
+        if (! $testService->works()) {
+            throw new RuntimeException('It didn\'t work.');
         }
     }
 }

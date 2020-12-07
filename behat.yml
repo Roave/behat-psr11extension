@@ -1,10 +1,10 @@
 default:
   suites:
     my_suite:
+      autowire: true
       services: "@my_container"
       contexts:
-        - RoaveFeatureTest\BehatPsrContainer\FeatureContext:
-          - "@RoaveFeatureTest\\BehatPsrContainer\\TestService"
+        - RoaveFeatureTest\BehatPsrContainer\FeatureContext
 
   extensions:
     Roave\BehatPsrContainer\PsrContainerExtension:
