@@ -9,9 +9,9 @@
         "symfony/dependency-injection": "^2.7 || ^3.0 || ^4.0 || ^5.0"
     },
     "require-dev": {
-        "zendframework/zend-servicemanager": "^3.3",
-        "phpunit/phpunit": "^6.3",
-        "doctrine/coding-standard": "^8.2"
+        "doctrine/coding-standard": "^8.2",
+        "laminas/laminas-servicemanager": "^3.5",
+        "phpunit/phpunit": "^6.3"
     },
     "license": "MIT",
     "authors": [
@@ -30,5 +30,8 @@
             "RoaveFeatureTest\\BehatPsrContainer\\": "features/bootstrap/",
             "RoaveTest\\BehatPsrContainer\\": "test/"
         }
+    },
+    "config": {
+        "sort-packages": true
     }
 }

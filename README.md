@@ -15,14 +15,14 @@ $ composer require --dev roave/behat-psr11extension
 ```
 
 First, if you don't already have one, create a file that will be included by the extension that returns a PSR-11
-compatible container, for example using `Zend\ServiceManager`:
+compatible container, for example using `Laminas\ServiceManager`:
 
 ```php
 <?php
 declare(strict_types=1);
 
-use Zend\ServiceManager\Config;
-use Zend\ServiceManager\ServiceManager;
+use Laminas\ServiceManager\Config;
+use Laminas\ServiceManager\ServiceManager;
 
 // Load configuration
 $config = require __DIR__ . '/config.php';

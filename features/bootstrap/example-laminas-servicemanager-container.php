@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
+use Laminas\ServiceManager\ServiceManager;
 use Psr\Container\ContainerInterface;
 use RoaveFeatureTest\BehatPsrContainer\TestService;
-use Zend\ServiceManager\ServiceManager;
 
 $serviceManager = new ServiceManager();
 $serviceManager->setFactory(
