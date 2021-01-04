@@ -37,7 +37,7 @@ final class FeatureContext implements Context
      */
     public function iShouldHaveServicesInjected(): void
     {
-        if (!$this->testService->works()) {
+        if (! $this->testService->works()) {
             throw new RuntimeException('It didn\'t work.');
         }
     }
@@ -47,7 +47,7 @@ final class FeatureContext implements Context
      */
     public function iShouldHaveServicesInjectedAsStepArguments(TestService $testService): void
     {
-        if (!$testService->works()) {
+        if (! $testService->works()) {
             throw new RuntimeException('It didn\'t work.');
         }
     }
