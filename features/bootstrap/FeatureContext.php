@@ -9,8 +9,7 @@ use RuntimeException;
 
 final class FeatureContext implements Context
 {
-    /** @var TestService */
-    private $testService;
+    private TestService $testService;
 
     public function __construct(TestService $testService)
     {
