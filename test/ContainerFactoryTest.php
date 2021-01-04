@@ -21,8 +21,7 @@ use function unlink;
  */
 final class ContainerFactoryTest extends TestCase
 {
-    /** @var string */
-    private $tempFilename;
+    private string $tempFilename;
 
     public function setUp(): void
     {
