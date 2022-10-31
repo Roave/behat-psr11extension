@@ -9,23 +9,16 @@ use RuntimeException;
 
 final class FeatureContext implements Context
 {
-    private TestService $testService;
-
-    public function __construct(TestService $testService)
+    public function __construct(private TestService $testService)
     {
-        $this->testService = $testService;
     }
 
-    /**
-     * @Given /^I have a Laminas\\ServiceManager container$/
-     */
+    /** @Given /^I have a Laminas\\ServiceManager container$/ */
     public function iHaveALaminasServiceManagerContainer(): void
     {
     }
 
-    /**
-     * @When /^I instantiate a context$/
-     */
+    /** @When /^I instantiate a context$/ */
     public function iInstantiateAContext(): void
     {
     }
@@ -42,9 +35,7 @@ final class FeatureContext implements Context
         }
     }
 
-    /**
-     * @Given /^I should have services injected as step arguments$/
-     */
+    /** @Given /^I should have services injected as step arguments$/ */
     public function iShouldHaveServicesInjectedAsStepArguments(TestService $testService): void
     {
         if (! $testService->works()) {

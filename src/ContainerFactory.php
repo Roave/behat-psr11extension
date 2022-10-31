@@ -9,9 +9,7 @@ use RuntimeException;
 
 final class ContainerFactory
 {
-    /**
-     * @throws RuntimeException
-     */
+    /** @throws RuntimeException */
     public static function createContainerFromIncludedFile(string $containerFile): ContainerInterface
     {
         /** @noinspection PhpIncludeInspection */
