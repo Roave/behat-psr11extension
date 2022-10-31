@@ -16,9 +16,7 @@ use function sys_get_temp_dir;
 use function tempnam;
 use function unlink;
 
-/**
- * @covers \Roave\BehatPsrContainer\ContainerFactory
- */
+/** @covers \Roave\BehatPsrContainer\ContainerFactory */
 final class ContainerFactoryTest extends TestCase
 {
     private string $tempFilename;
@@ -41,7 +39,7 @@ final class ContainerFactoryTest extends TestCase
     {
         file_put_contents(
             $this->tempFilename,
-            '<?php return new \stdClass();'
+            '<?php return new \stdClass();',
         );
 
         $this->expectException(NotAPsrContainer::class);
@@ -55,7 +53,7 @@ final class ContainerFactoryTest extends TestCase
             '<?php return new class implements \Psr\Container\ContainerInterface {
                 public function get($id) {}
                 public function has($id) {}
-            };'
+            };',
         );
 
         $container = ContainerFactory::createContainerFromIncludedFile($this->tempFilename);

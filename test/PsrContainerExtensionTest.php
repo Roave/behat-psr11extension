@@ -17,9 +17,7 @@ use function assert;
 use function method_exists;
 use function uniqid;
 
-/**
- * @covers \Roave\BehatPsrContainer\PsrContainerExtension
- */
+/** @covers \Roave\BehatPsrContainer\PsrContainerExtension */
 final class PsrContainerExtensionTest extends TestCase
 {
     public function testPsrContainerExtensionIsABehatExtension(): void
@@ -65,7 +63,7 @@ final class PsrContainerExtensionTest extends TestCase
             [
                 'container' => $containerConfigValue,
                 'name' => $nameConfigValue,
-            ]
+            ],
         );
 
         self::assertSame($containerConfigValue, $builder->getParameter('roave.behat.psr.container.included.file'));

@@ -12,9 +12,7 @@ use stdClass;
 use function sprintf;
 use function uniqid;
 
-/**
- * @covers \Roave\BehatPsrContainer\Exception\NotAPsrContainer
- */
+/** @covers \Roave\BehatPsrContainer\Exception\NotAPsrContainer */
 final class NotAPsrContainerTest extends TestCase
 {
     /** @return mixed[][] */
@@ -28,12 +26,8 @@ final class NotAPsrContainerTest extends TestCase
         ];
     }
 
-    /**
-     * @param mixed $value
-     *
-     * @dataProvider nonContainerValuesProvider
-     */
-    public function testExceptionForContainerValues($value, string $expectedType): void
+    /** @dataProvider nonContainerValuesProvider */
+    public function testExceptionForContainerValues(mixed $value, string $expectedType): void
     {
         $filename = uniqid('filename', true);
 
@@ -45,9 +39,9 @@ final class NotAPsrContainerTest extends TestCase
             sprintf(
                 'File %s must return a PSR-11 container, actually returned %s',
                 $filename,
-                $expectedType
+                $expectedType,
             ),
-            $exception->getMessage()
+            $exception->getMessage(),
         );
     }
 }
