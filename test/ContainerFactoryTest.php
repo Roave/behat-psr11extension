@@ -53,8 +53,8 @@ final class ContainerFactoryTest extends TestCase
         file_put_contents(
             $this->tempFilename,
             '<?php return new class implements \Psr\Container\ContainerInterface {
-                public function get($id) {}
-                public function has($id) {}
+                public function get(string $id):bool {}
+                public function has(string $id):bool {}
             };'
         );
 
