@@ -79,7 +79,7 @@ default:
         - MyBehatTestSuite\MyContext
 ```
 
-If for some reason you want to use a name other than `psr_container` for the container (e.g. collision with another extension) this can 
+If for some reason you want to use a name other than `psr_container` for the container (e.g. collision with another extension) this can
 be overridden:
 
 ```yaml
