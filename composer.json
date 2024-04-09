@@ -6,12 +6,12 @@
         "php": "~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0",
         "behat/behat": "^3.14.0",
         "psr/container": "^1.1.2",
-        "symfony/config": "^6.4.6",
-        "symfony/dependency-injection": "^6.4.6"
+        "symfony/config": "^6.0.19",
+        "symfony/dependency-injection": "^6.0.20"
     },
     "require-dev": {
         "doctrine/coding-standard": "^11.1.0",
-        "laminas/laminas-servicemanager": "^3.22.1",
+        "laminas/laminas-servicemanager": "^3.20.0",
         "phpunit/phpunit": "^9.6.19"
     },
     "license": "MIT",
