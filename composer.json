@@ -12,7 +12,7 @@
     "require-dev": {
         "doctrine/coding-standard": "^12.0.0",
         "laminas/laminas-servicemanager": "^3.20.0",
-        "phpunit/phpunit": "^9.6.19"
+        "phpunit/phpunit": "^11.4.2"
     },
     "license": "MIT",
     "authors": [
