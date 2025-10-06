@@ -10,7 +10,7 @@
         "symfony/dependency-injection": "^6.4.26"
     },
     "require-dev": {
-        "doctrine/coding-standard": "^13.0.1",
+        "doctrine/coding-standard": "^14.0.0",
         "laminas/laminas-servicemanager": "^4.4.0",
         "phpunit/phpunit": "^9.6.29"
     },
