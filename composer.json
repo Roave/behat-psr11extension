@@ -6,7 +6,7 @@
         "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0",
         "behat/behat": "^3.25.0",
         "psr/container": "^2.0.2",
-        "symfony/config": "^6.4.26",
+        "symfony/config": "^7.3.4",
         "symfony/dependency-injection": "^6.4.26"
     },
     "require-dev": {
