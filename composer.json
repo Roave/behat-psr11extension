@@ -4,15 +4,15 @@
     "type": "library",
     "require": {
         "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0",
-        "behat/behat": "^3.14.0",
-        "psr/container": "^2.0.0",
-        "symfony/config": "^6.0.19",
-        "symfony/dependency-injection": "^6.0.20"
+        "behat/behat": "^3.25.0",
+        "psr/container": "^2.0.2",
+        "symfony/config": "^6.4.26",
+        "symfony/dependency-injection": "^6.4.26"
     },
     "require-dev": {
         "doctrine/coding-standard": "^13.0.1",
         "laminas/laminas-servicemanager": "^4.4.0",
-        "phpunit/phpunit": "^9.6.19"
+        "phpunit/phpunit": "^9.6.29"
     },
     "license": "MIT",
     "authors": [
