@@ -5,7 +5,7 @@
     "require": {
         "php": "~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0",
         "behat/behat": "^3.14.0",
-        "psr/container": "^1.1.2 || ^2.0",
+        "psr/container": "^1.1.2 || ^2.0.0",
         "symfony/config": "^6.0.19",
         "symfony/dependency-injection": "^6.0.20"
     },
