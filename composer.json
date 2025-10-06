@@ -7,7 +7,7 @@
         "behat/behat": "^3.25.0",
         "psr/container": "^2.0.2",
         "symfony/config": "^6.4.26",
-        "symfony/dependency-injection": "^6.4.26"
+        "symfony/dependency-injection": "^7.3.4"
     },
     "require-dev": {
         "doctrine/coding-standard": "^14.0.0",
