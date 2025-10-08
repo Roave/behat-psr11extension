@@ -3,8 +3,8 @@
     "description": "PSR-11 Container extension for Behat",
     "type": "library",
     "require": {
-        "php": "~8.3.0 || ~8.4.0",
-        "behat/behat": "^3.26.0",
+        "php": "~8.3.0 || ~8.4.0 || ~8.5.0",
+        "behat/behat": "^3.27.0",
         "psr/container": "^2.0.2",
         "symfony/config": "^7.3.6",
         "symfony/dependency-injection": "^7.3.6"
