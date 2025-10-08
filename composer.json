@@ -3,7 +3,7 @@
     "description": "PSR-11 Container extension for Behat",
     "type": "library",
     "require": {
-        "php": "~8.2.0 || ~8.3.0 || ~8.4.0",
+        "php": "~8.3.0 || ~8.4.0",
         "behat/behat": "^3.25.0",
         "psr/container": "^2.0.2",
         "symfony/config": "^7.3.4",
@@ -12,7 +12,7 @@
     "require-dev": {
         "doctrine/coding-standard": "^14.0.0",
         "laminas/laminas-servicemanager": "^4.4.0",
-        "phpunit/phpunit": "^9.6.29"
+        "phpunit/phpunit": "^12.4.0"
     },
     "license": "MIT",
     "authors": [
@@ -37,7 +37,7 @@
             "dealerdirect/phpcodesniffer-composer-installer": true
         },
         "platform": {
-            "php": "8.2.99"
+            "php": "8.3.99"
         },
         "sort-packages": true
     }

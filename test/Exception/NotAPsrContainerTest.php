@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace RoaveTest\BehatPsrContainer\Exception;
 
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 use Roave\BehatPsrContainer\Exception\NotAPsrContainer;
 use RuntimeException;
@@ -16,7 +17,7 @@ use function uniqid;
 final class NotAPsrContainerTest extends TestCase
 {
     /** @return mixed[][] */
-    public function nonContainerValuesProvider(): array
+    public static function nonContainerValuesProvider(): array
     {
         return [
             ['just a string', 'string'],
@@ -26,7 +27,7 @@ final class NotAPsrContainerTest extends TestCase
         ];
     }
 
-    /** @dataProvider nonContainerValuesProvider */
+    #[DataProvider('nonContainerValuesProvider')]
     public function testExceptionForContainerValues(mixed $value, string $expectedType): void
     {
         $filename = uniqid('filename', true);
