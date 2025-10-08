@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         colors="true"
-         xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd">
-  <coverage processUncoveredFiles="true">
-    <include>
-      <directory suffix=".php">./src</directory>
-    </include>
-  </coverage>
-  <testsuites>
-    <testsuite name="unit">
-      <directory>./test</directory>
-    </testsuite>
-  </testsuites>
+<phpunit
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    colors="true"
+    xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+    failOnAllIssues="true"
+    displayDetailsOnAllIssues="true"
+>
+    <source>
+        <include>
+            <directory>src</directory>
+        </include>
+    </source>
+    <testsuites>
+        <testsuite name="unit">
+            <directory>test</directory>
+        </testsuite>
+    </testsuites>
 </phpunit>
