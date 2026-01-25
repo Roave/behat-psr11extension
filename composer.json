@@ -6,8 +6,8 @@
         "php": "~8.3.0 || ~8.4.0 || ~8.5.0",
         "behat/behat": "^3.29.0",
         "psr/container": "^2.0.2",
-        "symfony/config": "^7.4.3",
-        "symfony/dependency-injection": "^7.4.3"
+        "symfony/config": "^7.4.4",
+        "symfony/dependency-injection": "^7.4.4"
     },
     "require-dev": {
         "doctrine/coding-standard": "^14.0.0",
