@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "1c533fe7f8129ababf4dbfe2dddb644c",
+    "content-hash": "89290fd3f85c0ea6cef9aa02b86f81b7",
     "packages": [
         {
             "name": "behat/behat",
-            "version": "v3.30.0",
+            "version": "v3.31.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/Behat.git",
-                "reference": "be4af8c803a1ed589409a8a2eed01f9fb858e11d"
+                "reference": "7fbdcda54ed653f032dd4fe1da5b2bb1546b24d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Behat/zipball/be4af8c803a1ed589409a8a2eed01f9fb858e11d",
-                "reference": "be4af8c803a1ed589409a8a2eed01f9fb858e11d",
+                "url": "https://api.github.com/repos/Behat/Behat/zipball/7fbdcda54ed653f032dd4fe1da5b2bb1546b24d6",
+                "reference": "7fbdcda54ed653f032dd4fe1da5b2bb1546b24d6",
                 "shasum": ""
             },
             "require": {
@@ -38,9 +38,9 @@
             "require-dev": {
                 "opis/json-schema": "^2.5",
                 "php-cs-fixer/shim": "^3.89",
-                "phpstan/phpstan": "2.1.18",
+                "phpstan/phpstan": "2.1.46",
                 "phpunit/phpunit": "^9.6",
-                "rector/rector": "2.1.7",
+                "rector/rector": "2.3.9",
                 "sebastian/diff": "^4.0",
                 "symfony/filesystem": "^5.4 || ^6.4 || ^7.0",
                 "symfony/polyfill-php84": "^1.31",
@@ -92,7 +92,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Behat/Behat/issues",
-                "source": "https://github.com/Behat/Behat/tree/v3.30.0"
+                "source": "https://github.com/Behat/Behat/tree/v3.31.0"
             },
             "funding": [
                 {
@@ -108,7 +108,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-03-26T17:26:12+00:00"
+            "time": "2026-04-19T21:04:32+00:00"
         },
         {
             "name": "behat/gherkin",
