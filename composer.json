@@ -11,7 +11,7 @@
     },
     "require-dev": {
         "doctrine/coding-standard": "^14.0.0",
-        "laminas/laminas-servicemanager": "^4.5.0",
+        "laminas/laminas-servicemanager": "^4.5.1",
         "phpunit/phpunit": "^12.5.24"
     },
     "license": "MIT",
