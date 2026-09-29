@@ -7,12 +7,12 @@
         "behat/behat": "^3.34.0",
         "psr/container": "^2.0.2",
         "symfony/config": "^7.4.17",
-        "symfony/dependency-injection": "^7.4.17"
+        "symfony/dependency-injection": "^7.4.20"
     },
     "require-dev": {
         "doctrine/coding-standard": "^14.0.0",
         "laminas/laminas-servicemanager": "^4.5.1",
-        "phpunit/phpunit": "^13.3.5"
+        "phpunit/phpunit": "^13.3.6"
     },
     "license": "MIT",
     "authors": [
