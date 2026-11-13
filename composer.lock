@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b3f636142e784b06f1f2a58d3a6b0339",
+    "content-hash": "f5f6dc10670bf3052213dd3b95410bf6",
     "packages": [
         {
             "name": "behat/behat",
@@ -2333,22 +2333,22 @@
         },
         {
             "name": "laminas/laminas-servicemanager",
-            "version": "4.5.1",
+            "version": "4.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-servicemanager.git",
-                "reference": "11192d588876ad04ba2988984c77b4ecb5c771c2"
+                "reference": "254f03b2d3ac201ba22e721ae75af6c1357e218d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-servicemanager/zipball/11192d588876ad04ba2988984c77b4ecb5c771c2",
-                "reference": "11192d588876ad04ba2988984c77b4ecb5c771c2",
+                "url": "https://api.github.com/repos/laminas/laminas-servicemanager/zipball/254f03b2d3ac201ba22e721ae75af6c1357e218d",
+                "reference": "254f03b2d3ac201ba22e721ae75af6c1357e218d",
                 "shasum": ""
             },
             "require": {
-                "brick/varexporter": "^0.3.8 || ^0.4.0 || ^0.5.0 || ^0.6.0",
+                "brick/varexporter": "^0.3.8 || ^0.4.0 || ^0.5.0 || ^0.6.0 || ^0.7.0",
                 "laminas/laminas-stdlib": "^3.19",
-                "php": "~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0",
+                "php": "~8.3.0 || ~8.4.0 || ~8.5.0 || ~8.6.0",
                 "psr/container": "^1.1 || ^2.0"
             },
             "conflict": {
@@ -2359,17 +2359,19 @@
                 "psr/container-implementation": "^1.0 || ^2.0"
             },
             "require-dev": {
+                "boundwize/structarmed": "^0.18.11",
                 "composer/package-versions-deprecated": "^1.11.99.5",
-                "friendsofphp/proxy-manager-lts": "^1.0.18",
-                "laminas/laminas-cli": "^1.11",
+                "friendsofphp/proxy-manager-lts": "^1.0.19",
+                "laminas/internal-tooling": "^1.2",
+                "laminas/laminas-cli": "^1.16",
                 "laminas/laminas-coding-standard": "~3.1.0",
-                "laminas/laminas-container-config-test": "^1.1",
+                "laminas/laminas-container-config-test": "^1.2.0",
                 "mikey179/vfsstream": "^1.6.12",
-                "phpbench/phpbench": "^1.4.1",
-                "phpunit/phpunit": "^10.5.58",
-                "psalm/plugin-phpunit": "^0.19.5",
-                "symfony/console": "^6.4.17 || ^7.3.4",
-                "vimeo/psalm": "^6.13.1"
+                "phpbench/phpbench": "^1.7.0",
+                "phpunit/phpunit": "^11.5.58",
+                "psalm/plugin-phpunit": "^0.19.7",
+                "symfony/console": "^6.4.17 || ^7.4.23",
+                "vimeo/psalm": "^6.20.11"
             },
             "suggest": {
                 "friendsofphp/proxy-manager-lts": "To handle lazy initialization of services",
@@ -2406,16 +2408,16 @@
                 "chat": "https://laminas.dev/chat",
                 "forum": "https://discourse.laminas.dev",
                 "issues": "https://github.com/laminas/laminas-servicemanager/issues",
-                "source": "https://github.com/laminas/laminas-servicemanager/tree/4.5.1"
+                "source": "https://github.com/laminas/laminas-servicemanager/tree/4.6.0"
             },
             "funding": [
                 {
-                    "url": "https://funding.communitybridge.org/projects/laminas-project",
-                    "type": "community_bridge"
+                    "url": "https://crowdfunding.linuxfoundation.org/initiatives/laminas-project",
+                    "type": "custom"
                 }
             ],
-            "time": "2026-05-12T09:53:32+00:00",
-            "published-time": "2026-05-12T09:57:04+00:00"
+            "time": "2026-11-13T17:18:02+00:00",
+            "published-time": "2026-11-13T17:19:21+00:00"
         },
         {
             "name": "laminas/laminas-stdlib",
