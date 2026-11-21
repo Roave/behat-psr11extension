@@ -3,8 +3,8 @@
     "description": "PSR-11 Container extension for Behat",
     "type": "library",
     "require": {
-        "php": "~8.4.0 || ~8.5.0",
-        "behat/behat": "^3.34.0",
+        "php": "~8.4.0 || ~8.5.0 || ~8.6.0",
+        "behat/behat": "^3.35.1",
         "psr/container": "^2.0.2",
         "symfony/config": "^7.4.23",
         "symfony/dependency-injection": "^7.4.23"
@@ -12,7 +12,7 @@
     "require-dev": {
         "doctrine/coding-standard": "^14.0.0",
         "laminas/laminas-servicemanager": "^4.6.0",
-        "phpunit/phpunit": "^13.4.7"
+        "phpunit/phpunit": "^13.4.8"
     },
     "license": "MIT",
     "authors": [
