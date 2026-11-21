@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "behat/behat",
-            "version": "v3.34.0",
+            "version": "v3.35.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/Behat.git",
-                "reference": "044fea2f1706abafdf3184e6c4146ac9f9ba7d5a"
+                "reference": "bd51092ed0c274eda63687e8163814c9391cfb52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Behat/zipball/044fea2f1706abafdf3184e6c4146ac9f9ba7d5a",
-                "reference": "044fea2f1706abafdf3184e6c4146ac9f9ba7d5a",
+                "url": "https://api.github.com/repos/Behat/Behat/zipball/bd51092ed0c274eda63687e8163814c9391cfb52",
+                "reference": "bd51092ed0c274eda63687e8163814c9391cfb52",
                 "shasum": ""
             },
             "require": {
@@ -27,7 +27,7 @@
                 "cucumber/tag-expressions": "^11.0",
                 "ext-mbstring": "*",
                 "nikic/php-parser": "^4.19.2 || ^5.2",
-                "php": ">=8.2 <8.6",
+                "php": ">=8.2 <8.7",
                 "psr/container": "^1.0 || ^2.0",
                 "symfony/config": "^5.4 || ^6.4 || ^7.0",
                 "symfony/console": "^5.4.9 || ^6.4 || ^7.0",
@@ -93,7 +93,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Behat/Behat/issues",
-                "source": "https://github.com/Behat/Behat/tree/v3.34.0"
+                "source": "https://github.com/Behat/Behat/tree/v3.35.1"
             },
             "funding": [
                 {
@@ -109,31 +109,32 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-09-27T15:42:00+00:00",
-            "published-time": "2026-09-27T15:45:58+00:00"
+            "time": "2026-11-20T17:38:00+00:00",
+            "published-time": "2026-11-20T17:42:22+00:00"
         },
         {
             "name": "behat/gherkin",
-            "version": "v4.18.0",
+            "version": "v4.19.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/Gherkin.git",
-                "reference": "496248b29d9d7848311a263c2d17c1860e4c7b6c"
+                "reference": "dc765f07d85be8d97a5782bc845f51c3055c115f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Gherkin/zipball/496248b29d9d7848311a263c2d17c1860e4c7b6c",
-                "reference": "496248b29d9d7848311a263c2d17c1860e4c7b6c",
+                "url": "https://api.github.com/repos/Behat/Gherkin/zipball/dc765f07d85be8d97a5782bc845f51c3055c115f",
+                "reference": "dc765f07d85be8d97a5782bc845f51c3055c115f",
                 "shasum": ""
             },
             "require": {
                 "composer-runtime-api": "^2.2",
-                "php": ">=8.1 <8.6"
+                "php": ">=8.1 <8.7"
             },
             "require-dev": {
-                "cucumber/gherkin-monorepo": "dev-gherkin-v42.0.1",
+                "cucumber/gherkin-monorepo": "dev-gherkin-v43.0.0",
+                "cweagans/composer-patches": "^2.0",
                 "friendsofphp/php-cs-fixer": "^3.77",
-                "mikey179/vfsstream": "^1.6",
+                "mikey179/vfsstream": "1.6.12",
                 "phpstan/extension-installer": "^1",
                 "phpstan/phpstan": "2.2.14",
                 "phpstan/phpstan-deprecation-rules": "^2.0",
@@ -178,7 +179,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Behat/Gherkin/issues",
-                "source": "https://github.com/Behat/Gherkin/tree/v4.18.0"
+                "source": "https://github.com/Behat/Gherkin/tree/v4.19.0"
             },
             "funding": [
                 {
@@ -194,8 +195,8 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-09-25T21:26:10+00:00",
-            "published-time": "2026-09-25T21:28:06+00:00"
+            "time": "2026-11-20T10:20:57+00:00",
+            "published-time": "2026-11-20T10:21:40+00:00"
         },
         {
             "name": "composer/pcre",
