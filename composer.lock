@@ -344,16 +344,16 @@
         },
         {
             "name": "cucumber/tag-expressions",
-            "version": "v11.0.1",
+            "version": "v11.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cucumber/tag-expressions-php.git",
-                "reference": "d88e12c03a2069b4336156dc7831a6b78cce5e1d"
+                "reference": "3db448cea2366fc55f5250403bc50a26d1bea594"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cucumber/tag-expressions-php/zipball/d88e12c03a2069b4336156dc7831a6b78cce5e1d",
-                "reference": "d88e12c03a2069b4336156dc7831a6b78cce5e1d",
+                "url": "https://api.github.com/repos/cucumber/tag-expressions-php/zipball/3db448cea2366fc55f5250403bc50a26d1bea594",
+                "reference": "3db448cea2366fc55f5250403bc50a26d1bea594",
                 "shasum": ""
             },
             "require": {
@@ -381,10 +381,10 @@
             "homepage": "https://github.com/cucumber/tag-expressions",
             "support": {
                 "issues": "https://github.com/cucumber/tag-expressions/issues",
-                "source": "https://github.com/cucumber/tag-expressions-php/tree/v11.0.1"
+                "source": "https://github.com/cucumber/tag-expressions-php/tree/v11.2.0"
             },
-            "time": "2026-03-24T10:42:49+00:00",
-            "published-time": "2026-08-15T17:37:27+00:00"
+            "time": "2026-10-02T10:04:17+00:00",
+            "published-time": "2026-11-21T19:03:59+00:00"
         },
         {
             "name": "nikic/php-parser",
